@@ -3,74 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О себе - Моё портфолио</title>
+    <title>О себе - Сулейменов Дияр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-menu">
+            <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html" class="active">О себе</a></li>
                 <li><a href="projects.html">Проекты</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn">🌙 Темная тема</button>
         </nav>
+        <button id="theme-toggle">Тёмная тема</button>
     </header>
 
     <main>
-        <section class="about">
-            <h1>О себе</h1>
-            
-            <div class="bio">
-                <h2>Краткая биография</h2>
-                <p><strong>Имя:</strong> [Сулейменов Дияр]</p>
-                <p><strong>Город:</strong> [Павлодар]</p>
-                <p><strong>Университет:</strong> [ПГУ им Торайгыров]</p>
-                <p><strong>Специальность:</strong> [Computer Science]</p>
-            </div>
+        <section class="about-section">
+            <h1 class="page-title">О <span class="highlight">себе</span></h1>
 
-            <div class="interests">
-                <h2>Интересы</h2>
-                <ul>
-                    <li> Веб-разработка (Frontend и Backend)</li>
-                    <li> Дизайн интерфейсов</li>
-                    <li> 3Д Графика</li>
-                    <li> 3Д Анимация</li>
-                </ul>
-            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h2>Основная информация</h2>
+                    <ul class="info-list">
+                        <li><strong>Имя:</strong> Сулейменов Дияр</li>
+                        <li><strong>Город:</strong> Павлодар</li>
+                    </ul>
+                </div>
 
-            <div class="skills">
-                <h2>Навыки</h2>
-                <ul>
-                    <li>HTML5, CSS3, JavaScript</li>
-                    <li>React, Vue.js</li>
-                    <li>Node.js, Express</li>
-                    <li>Git, GitHub</li>
-                    <li>Адаптивная верстка</li>
-                </ul>
-            </div>
+                <div class="about-card">
+                    <h2>Профессиональные интересы</h2>
+                    <ul class="interests-list">
+                        <li>High-poly моделирование</li>
+                        <li>Процедурная анимация</li>
+                        <li>Разработка персонажей</li>
+                        <li>Создание окружений для игр</li>
+                        <li>VFX и симуляция физики</li>
+                    </ul>
+                </div>
 
-            <div class="hobbies">
-                <h2>Хобби</h2>
-                <ul>
-                    <li> Чтение технической литературы</li>
-                    <li> Видеоигры</li>
-                    <li> Велоспорт</li>
-                    <li> Музыка</li>
-                </ul>
-            </div>
+                <div class="about-card">
+                    <h2>Навыки</h2>
+                    <div class="skills">
+                        <span class="skill-tag">Blender</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">Substance Painter</span>
+                        <span class="skill-tag">ZBrush</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">HTML</span>
+                    </div>
+                </div>
 
-            <div class="goals">
-                <h2>Профессиональные цели</h2>
-                <p>Стремлюсь стать Full-stack разработчиком, создавать полезные и инновационные продукты, которые улучшают жизнь людей. Планирую углубить знания в области машинного обучения и внедрять AI в веб-приложения.</p>
+                <div class="about-card">
+                    <h2>Хобби</h2>
+                    <ul class="hobby-list">
+                        <li>Стримить в игры</li>
+                        <li>Скетчинг и концепт арт</li>
+                    </ul>
+                </div>
+
+                <div class="about-card full-width">
+                    <h2>Цели</h2>
+                    <p>Развиваться в направлении hardpops моделирования</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 [Buntollv]. Все права защищены.</p>
+        <p>© <span id="current-year"></span> Buntollv.</p>
     </footer>
 
     <script src="script.js"></script>

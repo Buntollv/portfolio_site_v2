@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
+    <title>СУЛЕЙМЕНОВ ДИЯР - 3D Художник и Аниматор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-menu">
+            <ul>
                 <li><a href="index.html" class="active">Главная</a></li>
                 <li><a href="about.html">О себе</a></li>
                 <li><a href="projects.html">Проекты</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn">🌙 Темная тема</button>
         </nav>
+        <button id="theme-toggle">Тёмная тема</button>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Привет, я [Ваше Имя]</h1>
-                <p class="subtitle">Веб-разработчик | Студент | Энтузиаст</p>
-                <p class="description">Создаю современные и функциональные веб-сайты. Постоянно учусь и развиваюсь в мире веб-технологий.</p>
+            <div class="hero-text">
+                <h1>ДИЯР <span class="highlight">СУЛЕЙМЕНОВ</span></h1>
+                <p class="subtitle">3D Художник | Аниматор
+                <p class="description">
+                    Владею Blender,Unreal Engine.Всегда совершенствую навыки и стремлюсь создавать качественные 3D модели и анимацию. Мои работы включают в себя высокополигональные модели автомобилей,оружия и окружений для игр. Я открыт для сотрудничества.
+                </p>
             </div>
             <div class="hero-image">
-                <!-- Добавьте своё фото или placeholder -->
-                <div class="photo-placeholder">📸 Фото</div>
+                <img src="images/pfp.jpg" alt="no img">
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="section-header">
+                <h2><a href="projects.html" class="section-title-link">Ключевые работы</a></h2>
+                <a href="projects.html" class="view-all">Все проекты →</a>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card with-image">
+                    <div class="card-image">
+                        <img src="images/car1.jpg" alt="3D модель автомобиля">
+                    </div>
+                    <h3>3D модель автомобиля</h3>
+                    <p>Детализированная модель спорткара. Моделирование в Blender</p>
+                    <a href="projects.html" class="card-link">Подробнее →</a>
+                </div>
+                <div class="project-card with-image">
+                    <div class="card-image">
+                        <img src="images/car2.jpg" alt="Вторая 3D модель авто">
+                    </div>
+                    <h3>Ретро-автомобиль</h3>
+                    <p>Детализированная модель спорткара. Моделирование в Blender</p>
+                    <a href="projects.html" class="card-link">Подробнее →</a>
+                </div>
+                <div class="project-card with-image">
+                    <div class="card-image">
+                        <img src="images/Glock.jpg" alt="3D модель оружия">
+                    </div>
+                    <h3>High-poly модель Glock</h3>
+                    <p>Детализированная модель оружия.</p>
+                    <a href="projects.html" class="card-link">Подробнее →</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 [Ваш Никнейм]. Все права защищены.</p>
+        <p>© <span id="current-year"></span> Buntollv.</p>
     </footer>
 
     <script src="script.js"></script>

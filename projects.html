@@ -3,74 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проекты - Моё портфолио</title>
+    <title>СУЛЕЙМЕНОВ ДИЯР - 3D Художник</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-menu">
+            <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О себе</a></li>
                 <li><a href="projects.html" class="active">Проекты</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn">🌙 Темная тема</button>
         </nav>
+        <button id="theme-toggle"> Тёмная тема</button>
     </header>
+   
 
     <main>
-        <section class="projects">
-            <h1>Мои проекты</h1>
-
-            <div class="project-list">
-                <article class="project-card">
-                    <div class="project-image">
-                        <!-- Место для скриншота проекта -->
-                        <div class="project-placeholder">🖼️ To-Do App</div>
+        <section class="projects-3d">
+            <h1 class="page-title">Мои проекты <span class="highlight">в 3D</span></h1>
+            <div class="projects-3d-grid">
+                <div class="project-3d-card">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <div class="project-preview">
+                                <div class="preview-placeholder">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <h3>Название проекта</h3>
+                            </div>
+                        </div>
+                        <div class="card-3d-back">
+                            <h4>О проекте</h4>
+                            <p>Пока пускай будет пусто</p>
+                            <div class="project-links">
+                            </div>
+                        </div>
                     </div>
-                    <h2>To-Do List приложение</h2>
-                    <p>Простое приложение для управления задачами. Позволяет добавлять, удалять и отмечать выполненные задачи.</p>
-                    <p><strong>Технологии:</strong> HTML, CSS, JavaScript</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">🔗 Демо</a>
-                        <a href="#" target="_blank">💻 Репозиторий</a>
+                </div>
+                <div class="project-3d-card">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <div class="project-preview">
+                                <div class="preview-placeholder">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3>Название проекта 2</h3>
+                            </div>
+                        </div>
+                        <div class="card-3d-back">
+                            <h4>О проекте</h4>
+                            <p>Пока пускай будет пусто</p>
+                            <div class="project-links">
+                            </div>
+                        </div>
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🖼️ Калькулятор</div>
+                </div>
+                <div class="project-3d-card">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <div class="project-preview">
+                                <div class="preview-placeholder">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3>Название проекта 3</h3>
+                            </div>
+                        </div>
+                        <div class="card-3d-back">
+                            <h4>О проекте</h4>
+                            <p>Пока пускай будет пусто</p>
+                            <div class="project-links">
+                            </div>
+                        </div>
                     </div>
-                    <h2>Веб-калькулятор</h2>
-                    <p>Калькулятор с базовыми математическими операциями и приятным интерфейсом.</p>
-                    <p><strong>Технологии:</strong> HTML, CSS, JavaScript</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">🔗 Демо</a>
-                        <a href="#" target="_blank">💻 Репозиторий</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="future-projects">
-                <h2>Будущие проекты</h2>
-                <ul>
-                    <li>
-                        <strong>Интернет-магазин:</strong> Полноценный e-commerce проект с корзиной и оплатой
-                    </li>
-                    <li>
-                        <strong>Блог платформа:</strong> Система для создания и управления блогами
-                    </li>
-                    <li>
-                        <strong>Погодное приложение:</strong> Приложение с прогнозом погоды и интерактивной картой
-                    </li>
-                </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 [Ваш Никнейм]. Все права защищены.</p>
+        <p>&copy; <span id="current-year"></span> [Buntollv].</p>
     </footer>
 
     <script src="script.js"></script>
