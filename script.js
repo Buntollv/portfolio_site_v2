@@ -28,3 +28,23 @@ menuItems.forEach(item => {
         item.classList.add('active');
     }
 });
+
+// Ripple effect for buttons on project cards
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.btn');
+  if (!btn) return;
+
+  const ripple = document.createElement('span');
+  ripple.classList.add('ripple-effect');
+  btn.appendChild(ripple);
+
+  const rect = btn.getBoundingClientRect();
+  const diameter = Math.max(rect.width, rect.height);
+  const radius = diameter / 2;
+
+  ripple.style.width = ripple.style.height = `${diameter}px`;
+  ripple.style.left = `${e.clientX - rect.left - radius}px`;
+  ripple.style.top = `${e.clientY - rect.top - radius}px`;
+
+  ripple.addEventListener('animationend', () => ripple.remove());
+});
